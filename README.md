@@ -77,8 +77,6 @@ python -m streamlit run streamlit_app.py
 
 ---
 
-## ✅ License
-Open for educational and non-commercial use.
 
 
 
