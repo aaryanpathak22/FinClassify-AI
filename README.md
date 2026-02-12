@@ -1,25 +1,27 @@
-#  FinClassify AI
+#  FinClassify-AI – Smart Transaction Categorization
+FinClassify-AI is an NLP-based machine learning system designed to automatically categorize raw financial transaction descriptions into structured spending categories.
 
-FinClassify AI is a machine-learning powered system that automatically classifies raw bank transaction text (e.g., **"DMART GROCERY"**, **"UBER *TRIP 8877"**) into spending categories such as Groceries, Shopping, Dining, Fuel, Entertainment, and Transport.
-
-It helps users track expenses effortlessly and enables financial apps to automate categorisation.
+The project implements a complete ML pipeline including data preprocessing, model training, inference service, and a Streamlit-based user interface for real-time predictions.
 
 ---
 
 ## Features
 
-✅ Classifies raw transaction text  
-✅ Shows confidence score  
-✅ Visual “Class Scores” bar chart  
-✅ Simple explainability (XAI)  
-✅ Feedback logging for continuous learning  
-✅ Clean Streamlit UI  
-
+- Text normalization and preprocessing pipeline
+- Abbreviation expansion for financial transactions
+- Supervised ML model training
+- Saved model serialization (.pkl)
+- Real-time inference service
+- Streamlit UI for interactive predictions
+- Structured modular project architecture
 ---
 
 ##  Tech Stack
 
 - **Python**
+- **Pandas**
+- **Scikit-learn**
+- **Pickle (model serialization)**
 - **DistilBERT embeddings**
 - **Logistic Regression classifier**
 - **Streamlit UI**
@@ -28,19 +30,17 @@ It helps users track expenses effortlessly and enables financial apps to automat
 ---
 
 ##  Project Structure
-FinClassify_AI/
-├── data/
-│ └── transactions.csv
-├── models/
-│ ├── finclassify_model.pkl
-│ └── finclassify_labels.pkl
-├── src/
-│ ├── data_prep.py
-│ ├── train_model.py
-│ ├── inference_service.py
-│ └── streamlit_app.py
-├── README.md
-└── venv/
+<pre> ## Project Structure ``` FinClassify_AI/ │ ├── data/ │ └── transactions.csv │ ├── models/ │ ├── finclassify_model.pkl │ └── finclassify_labels.pkl │ ├── src/ │ ├── data_prep.py │ ├── train_model.py │ └── inference_service.py │ ├── streamlit_app.py ├── README.md └── venv/ ``` </pre>
+
+---
+
+## ⚙️ How It Works
+
+1. Raw transaction text is cleaned and normalized.
+2. Abbreviations are expanded using a custom mapping.
+3. Text is vectorized using NLP techniques.
+4. A supervised ML classifier predicts transaction categories.
+5. Predictions are served via a Streamlit web interface.
 
 
 ---
