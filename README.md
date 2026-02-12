@@ -30,8 +30,21 @@ The project implements a complete ML pipeline including data preprocessing, mode
 ---
 
 ##  Project Structure
-<pre> ## Project Structure ``` FinClassify_AI/ │ ├── data/ │ └── transactions.csv │ ├── models/ │ ├── finclassify_model.pkl │ └── finclassify_labels.pkl │ ├── src/ │ ├── data_prep.py │ ├── train_model.py │ └── inference_service.py │ ├── streamlit_app.py ├── README.md └── venv/ ``` </pre>
-
+~~~
+FinClassify_AI/
+├── data/
+│ └── transactions.csv
+├── models/
+│ ├── finclassify_model.pkl
+│ └── finclassify_labels.pkl
+├── src/
+│ ├── data_prep.py
+│ ├── train_model.py
+│ ├── inference_service.py
+│ └── streamlit_app.py
+├── README.md
+└── venv/
+~~~
 ---
 
 ## ⚙️ How It Works
